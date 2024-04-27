@@ -98,7 +98,7 @@ main a:hover {
     margin-right: 20px;
 }
 
-.card-pic {
+#about-me-pic img, #board-games-pic img {
     min-width: 150px;
     max-width: 100%;
     border: 2px solid black;
