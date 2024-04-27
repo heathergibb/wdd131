@@ -15,7 +15,7 @@ header {
 #menu-links {
     font-size: 1.2rem;
     display: flex;
-    background: #808f85;
+    background: #b3c5b9;
 }
 
 #menu-links a {
@@ -23,11 +23,12 @@ header {
     text-align: center;
     text-decoration: none;
     flex: auto;
-    color: #DCE0D9;
+    color: black;
 }
 
 #menu-links a:hover {
     background: #31081F;
+    color: #DCE0D9;
 }
 
 p, h2 {
@@ -110,7 +111,7 @@ main a:hover {
 
 #resources-links a {
     background-color: #595959;
-    color: #DCE0D9;
+    color: white;
     width: 200px;
     border-radius: .75rem;
     padding: 20px;
@@ -130,6 +131,6 @@ footer {
 
 #footer-details {
     padding: 20px;
-    background: #808f85;
-    color: #DCE0D9;
+    background: #b3c5b9;
+    color: black;
 }
