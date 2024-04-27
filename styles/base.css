@@ -107,7 +107,7 @@ main a:hover {
     text-decoration: underline;
 }
 
-#board-game-text a:visited {
+#board-game-text a:visited a:link {
     color: black;
 }
 #about-me-pic img, #board-games-pic img {
