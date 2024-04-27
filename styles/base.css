@@ -98,6 +98,18 @@ main a:hover {
     margin-right: 20px;
 }
 
+#board-games-text a {
+    color: black;
+    text-decoration: none;
+}
+
+#board-games-text a:hover {
+    text-decoration: underline;
+}
+
+#board-game-text a:visited {
+    color: black;
+}
 #about-me-pic img, #board-games-pic img {
     min-width: 150px;
     max-width: 100%;
