@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+  
+body {
+    background-color: #DCE0D9;
+    font-family: Montserrat, Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    align-content: center;
+    background: #595959;
+    color: #DCE0D9;
+}
+
+#menu-links {
+    font-size: 1.2rem;
+    display: flex;
+    background: #808f85;
+}
+
+#menu-links a {
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    flex: auto;
+    color: #DCE0D9;
+}
+
+#menu-links a:hover {
+    background: #31081F;
+}
+
+p, h2 {
+    margin: 0;
+}
+
+main {
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;;
+    margin: 20px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 2px solid black;
+    border-radius: .75rem;
+    overflow: hidden; 
+}
+
+.card-header {
+    grid-column: 1/5;
+    text-align: center;
+    height: 75px;
+    font-size: 20px;
+    background-color: #31081F;
+    color: #DCE0D9;
+    align-content: center;
+}
+
+main a {
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+#about-me-text, #about-me-pic, #board-games-pic, #board-games-text {
+    padding: 20px 0px;
+}
+#about-me-text {
+    grid-column: 1/4;
+    margin-left: 20px;
+}
+
+#about-me-pic {
+    grid-column: 4/5;
+    margin: 0px 20px;
+}
+
+#board-games-title {
+    grid-column: 1/5;
+    text-align: center;
+}
+
+#board-games-pic {
+    grid-column: 1/2;
+    margin: 0px 20px;
+}
+
+#board-games-text {
+    grid-column: 2/5;
+    margin-right: 20px;
+}
+
+.card-pic {
+    max-width: 100%;
+    border: 2px solid black;
+}
+
+#resources-links {
+    grid-column: 1/5;
+    padding: 20px;
+    text-align: center;
+}
+
+#resources-links a {
+    background-color: #595959;
+    color: #DCE0D9;
+    width: 200px;
+    border-radius: .75rem;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#resources-links a:hover {
+    background-color: #31081F;
+}
+
+footer {
+    text-align: center;
+}
+
+#footer-details {
+    padding: 20px;
+    background: #808f85;
+    color: #DCE0D9;
+}

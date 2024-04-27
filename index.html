@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Heather Gibb</title>
+    <meta name="description" content="Heather Gibb is a Software Development student at BYU-I, currently taking WDD 131 - Dynamic Web Fundamentals. She loves her family, gardening, and camping in the mountains." />
+    <meta name="author" content="Heather Gibb" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Heather Gibb</h1>
+        <nav id="menu-links">
+            <a href="https://www.linkedin.com/in/heather-gibb/" target="_blank">LinkedIn</a>
+            <a href="https://byui.instructure.com/" target="_blank">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/36?lang=eng" target="_blank">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2 class="card-header">About Me</h2>
+            <div id="about-me-text">
+                <p>Hi, I'm Heather! I am happily married to my husband of 26 years, and we have 4 children who we adore. 
+                    I enjoy listening to good music, playing board games, and chatting with friends. I love to spend 
+                    time in nature. My family enjoys camping in the mountains every summer and I love to garden. 
+                    We recently moved to Lethbridge, Alberta, Canada, but I grew up near Edmonton.
+                </p>
+            </div>
+            <div id="about-me-pic">
+                <img class="card-pic" src="images/Me.jpg" alt="Picture of Heather">
+            </div>
+
+            <h3 id="board-games-title">I Love Board Games</h3>
+            <div id="board-games-pic">
+                <img class="card-pic" src="images/board-games.jpg" alt="Picture of a stack of board games in a cupboard">
+            </div>
+            <div id="board-games-text">
+                <p>Since I was a little girl, I have enjoyed playing board games. I have accumulated quite a large
+                collection over the years, but here are a few of my current favorites:
+                </p>
+                <ul>
+                    <li><a href="https://boardgamegeek.com/boardgame/27746/colosseum" target="_blank">Colosseum</a></li>
+                    <li><a href="https://boardgamegeek.com/boardgame/266192/wingspan" target="_blank">Wingspan</a></li>
+                    <li><a href="https://boardgamegeek.com/boardgame/102794/caverna-the-cave-farmers" target="_blank">Caverna</a></li>
+                    <li><a href="https://boardgamegeek.com/boardgame/822/carcassonne" target="_blank">Carcassonne</a></li>         
+                </ul>
+            </div>
+        </section>
+        <section class="card">
+            <h2 class="card-header">Web Dev Resources</h2>
+            <div id="resources-links">
+                <a href="https://htmlreference.io/" target="_blank">HTML Reference</a><br>
+                <a href="https://www.w3schools.com/" target="_blank">W3Schools</a><br>
+                <a href="https://validator.w3.org/" target="_blank">HTML Validator</a><br>
+                <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validator</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav id="footer-details">
+            <p>&copy<span id="currentYear"></span> | Heather Gibb | Lethbridge, AB, Canada</p>
+            <p id="lastModified"></p>
+        </nav>  
+    </footer>
+</body>
+</html>
