@@ -41,7 +41,7 @@ main {
     grid-template-columns: 2fr 1fr;
     grid-gap: 20px;
     padding: 20px;;
-    margin: 20px;
+    margin: auto;
 }
 
 .card {
@@ -99,6 +99,7 @@ main a:hover {
 }
 
 .card-pic {
+    min-width: 150px;
     max-width: 100%;
     border: 2px solid black;
 }
