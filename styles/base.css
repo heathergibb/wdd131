@@ -109,8 +109,8 @@ main a:hover {
     color: black;
 }
 #about-me-pic img, #board-games-pic img {
-    min-width: 150px;
-    max-width: 100%;
+    aspect-ratio: 1/1;
+    width: 150px;
     border: 2px solid black;
 }
 
