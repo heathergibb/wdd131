@@ -11,7 +11,7 @@ header {
     color: black;
     padding: 0 2rem;
     height: 6rem;
- }
+}
 
 #menu {
     display: block;
@@ -34,10 +34,11 @@ header {
 
 .menu-links.show {
     display: flex;
-    flex-direction:column;
-    top: 6rem;
-    right: 0;
-    width: 100%;
+    flex-direction: column;
+    top: 6.5rem;
+    right: 0.5rem;
+    left: 0.5rem;
+    width: auto;
     align-items: center;
     position:absolute;
     text-align: center;
