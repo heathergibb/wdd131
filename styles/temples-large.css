@@ -3,28 +3,13 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .menu-links {
-        font-size: 1.3rem;
-        display: flex;
-        height: 100%;
-    }
-    
-    .menu-links a {
-        padding: 0 15px;
-        text-align: center;
-        text-decoration: none;
-        display: flex;
-        color: black;
-        align-items: center;
-    }
-    
-    .menu-links a:hover {
-        background: #31081F;
-        color: #DCE0D9;
-    }
-    
     #menu {
         display: none;
+    }
+
+    .menu-links {
+        display: flex;
+        
     }
 }
 
