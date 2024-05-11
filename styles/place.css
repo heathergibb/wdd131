@@ -9,16 +9,20 @@
 body {
     font-family: Montseerrat, Arial, sans serif;
     background-color: var(--alt-light-color);
+    margin: 0 auto;
 }
 
 header {
     background: var(--dark-color);
+    border-bottom: 1rem var(--contrast-color) solid;
+    align-content: center;
+    height: 80px;
+}
+h1 {
     color: var(--light-color);
-    padding: 1rem;
     text-align: center;
     font-size: 2rem;
     font-weight: bolder;
-    border-bottom: 1rem var(--contrast-color) solid;
 }
 
 .hero img {
@@ -62,19 +66,23 @@ h2 {
     content: " 🌤️";
     display: none;
 }
-
+.weather-card img {
+    height: 80px;
+}
 .footer-details {
     background: var(--dark-color);
     color: var(--light-color);
     text-align: center;
-    padding: 20px;
+    align-content: center;
+    height: 80px;
+    font-size: .9rem;
 }
 
 @media screen and (min-width: 600px) {
     main {
         display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+        /* justify-content: space-between; */
+        /* align-items: flex-start; */
     }
 
     .data-card, .weather-card {
@@ -87,25 +95,28 @@ h2 {
         padding: 10px 20px;
         font-size: 1rem;
     }
-    .weather-card h2::after {
-        display: inline;
-    }
-
-    .card-details {
-        padding: 10px 10px 0 10px;
-        font-size: .75rem;
-    }
 
     .data-card {
         left: 20px; 
         top: 120px;
     }
+
     .weather-card {
         border-top: none;
         right: 10%;
         bottom: 120px;
     }
+
+    .weather-card h2::after {
+        display: inline;
+    }
+
     .weather-card img {
         display: none;
     }
+
+    .card-details {
+        padding: 10px 10px 0 10px;
+        font-size: .75rem;
+    }`
 }
