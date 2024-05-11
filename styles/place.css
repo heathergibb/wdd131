@@ -78,33 +78,31 @@ h2 {
     font-size: .9rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
     main {
-        display: flex;
-        /* justify-content: space-between; */
-        /* align-items: flex-start; */
+        display: grid;
+        grid-template-columns: 20px auto 1fr auto 20px;
+        grid-template-rows: 20px auto 1fr auto 20px;
+    }
+
+    .hero {
+        grid-column: 1/6;
+        grid-row: 1/6;
     }
 
     .data-card, .weather-card {
-        position: absolute;
         background-color: var(--card-background-color);
     }
 
-    h2 {
-        text-align: left;
-        padding: 10px 20px;
-        font-size: 1rem;
-    }
-
     .data-card {
-        left: 20px; 
-        top: 120px;
+        grid-column: 2/3;
+        grid-row: 2/3;
     }
 
     .weather-card {
+        grid-column: 4/5;
+        grid-row: 4/5;
         border-top: none;
-        right: 10%;
-        bottom: 120px;
     }
 
     .weather-card h2::after {
@@ -114,9 +112,15 @@ h2 {
     .weather-card img {
         display: none;
     }
+    
+    h2 {
+        text-align: center;
+        padding: 10px 20px;
+        font-size: 1.25rem;
+    }
 
     .card-details {
         padding: 10px 10px 0 10px;
-        font-size: .75rem;
-    }`
+        font-size: .9rem;
+    }
 }
