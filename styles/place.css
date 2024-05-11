@@ -1,0 +1,111 @@
+:root {
+    --dark-color: rgb(13,54,146); /* #0D3692; */
+    --contrast-color: rgb(255,235,67);
+    --card-background-color: rgba(189,189,189,0.7);
+    --light-color: white;
+    --alt-light-color: rgb(189,189,189);
+}
+
+body {
+    font-family: Montseerrat, Arial, sans serif;
+    background-color: var(--alt-light-color);
+}
+
+header {
+    background: var(--dark-color);
+    color: var(--light-color);
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    border-bottom: 1rem var(--contrast-color) solid;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    background-color: var(--contrast-color);
+    text-align: center;
+    margin: 0;
+}
+
+.card-details {
+    padding: 10px;
+}
+
+.data-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.label {
+    grid-column: 1/2;
+    text-align: right;
+    padding: 3px;
+    font-weight: bold;
+}
+
+.value {
+    grid-column: 2/3;
+    padding: 3px;
+    text-align: left;
+}
+
+.weather-card {
+    text-align: center;
+}
+
+.weather-card h1::after {
+    content: " 🌤️";
+    display: none;
+}
+
+.footer-details {
+    background: var(--dark-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .data-card, .weather-card {
+        position: absolute;
+        background-color: var(--card-background-color);
+    }
+
+    h1 {
+        text-align: left;
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+    .weather-card h1::after {
+        display: inline;
+    }
+
+    .card-details {
+        padding: 10px 10px 0 10px;
+        font-size: .75rem;
+    }
+
+    .data-card {
+        left: 20px; 
+        top: 120px;
+    }
+    .weather-card {
+        border-top: none;
+        right: 10%;
+        bottom: 120px;
+    }
+    .weather-card img {
+        display: none;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alberta</title>
+    <meta name="author" content="Heather Gibb">
+    <meta name="description" content="Basic data and weather information about Alberta, Canada.">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>Alberta, Canada</header>
+    <main>
+
+        <div class="hero">
+            <picture>
+                <source srcset="images/banff-hero-large.webp" media="(min-width: 600px)">
+                <img src="images/banff-hero-small.webp" alt="Mountain in Banff National Park" width="600" height="600">
+            </picture> 
+        </div> 
+        <article class="data-card">
+            <h1>Data</h1>
+            <div class="card-details">
+                <div class="data-item">
+                    <div class="label">Area:</div>
+                    <div class="value">661,849 km&sup2</div>
+                </div>
+                <div class="data-item">
+                    <div class="label">Population:</div>
+                    <div class="value">4,368,370</div>
+                </div>
+                <div class="data-item">
+                    <div class="label">Capital:</div>
+                    <div class="value">Edmonton</div>
+                </div>
+                <div class="data-item">
+                    <div class="label">Currency:</div>
+                    <div class="value">Canadian Dollar</div>
+                </div>
+                <div class="data-item">
+                    <div class="label">Language:</div>
+                    <div class="value">English</div>
+                </div>
+                <div class="data-item">
+                    <div class="label">Time Zone:</div>
+                    <div class="value">UTC-7:00</div>
+                </div>
+                <div class="data-item">
+                    <div class="label">Flower:</div>
+                    <div class="value">Wild Rose</div>
+                </div>
+                <div class="data-item">
+                    <div class="label">Tree: </div>
+                    <div class="value">Lodgepole Pine</div>
+                </div>
+                <div class="data-item">
+                    <div class="label">Bird</div>
+                    <div class="value">Great Horned Owl</div>
+                </div>
+            </div>
+        </article>
+        <article class="weather-card">
+            <h1>Weather</h1>
+            <img src="images/weather-icon.svg" alt="Sun with clouds" width:="75" height="75">
+            <div class="card-details">
+                <div class="data-item">
+                    <div class="label">Temperature:</div>
+                    <div class="value"><span id="temp"></span></div>
+                </div>
+                <div class="data-item">
+                    <div class="label">Conditions:</div>
+                    <div class="value">Gentle breeze</div>
+                </div>
+                <div class="data-item">
+                    <div class="label">Wind:</div>
+                    <div class="value"><span id="wind"></span></div>
+                </div>
+                <div class="data-item">
+                    <div class="label">Wind Chill:</div>
+                    <div class="value"><span id="windchill"></span></div>
+                </div>
+            </div>          
+        </article>
+    </main>
+    <footer>
+        <nav class="footer-details">
+            <p>&copy;<span id="currentYear"></span> | Heather Gibb | Lethbridge, AB, Canada</p>
+            <p id="lastModified"></p>
+        </nav>  
+    </footer>
+    
+</body>
+</html>
