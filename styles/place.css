@@ -67,7 +67,7 @@ h2 {
     display: none;
 }
 .weather-card img {
-    height: 80px;
+    height: 75px;
 }
 .footer-details {
     background: var(--dark-color);
