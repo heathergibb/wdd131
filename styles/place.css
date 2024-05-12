@@ -61,14 +61,15 @@ h2 {
 .weather-card {
     text-align: center;
 }
+.weather-card img {
+    padding-top: 10px;
+}
 
 .weather-card h2::after {
     content: " 🌤️";
     display: none;
 }
-/* .weather-card img {
-    height: 75px;
-} */
+
 .footer-details {
     background: var(--dark-color);
     color: var(--light-color);
