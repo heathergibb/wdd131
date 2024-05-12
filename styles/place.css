@@ -66,9 +66,9 @@ h2 {
     content: " 🌤️";
     display: none;
 }
-.weather-card img {
+/* .weather-card img {
     height: 75px;
-}
+} */
 .footer-details {
     background: var(--dark-color);
     color: var(--light-color);
