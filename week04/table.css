@@ -1,0 +1,44 @@
+body {
+    padding: 5%;
+}
+table {
+    width: 400px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-collapse: collapse;
+}
+
+caption {
+    caption-side: bottom;
+    font-size: smaller;
+    padding: 0.2rem;
+}
+thead {
+    background-color: black;
+    color: white;
+}
+
+thead th, tbody td {
+    text-align: center;
+}
+
+td, th {
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(0,0,0,0.1);
+    white-space: pre;
+}
+thead th {
+    padding: 1rem;
+    font-weight: larger;
+}
+
+thead tr:nth-last-child(1) {
+    background-color: #333;
+}
+
+.blank {
+    background-color: #000;;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eee;
+}
