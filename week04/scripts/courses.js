@@ -16,8 +16,24 @@ const aCourse = {
           days: "TTh",
           instructor: "Sis A",
         }
-      ]
-};
+      ],
+    enrollStudent: function (sectionNum) {
+        const sectionIndex = this.sections.findIndex(
+            (section) => section.sectionNum == sectionNum);
+        if (sectionIndex >=0) {
+            this.sections[sectionIndex].enrolled++;
+            renderSections(this.sections);
+        }
+    },
+    dropStudent: function (sectionNum) {
+        const sectionIndex = this.sections.findIndex(
+            (section) => section.sectionNum == sectionNum);
+        if (sectionIndex >=0) {
+            this.sections[sectionIndex].enrolled--;
+            renderSections(this.sections);
+        }
+    }
+}
 
 function setCourseInfo(course) {
     const courseName = document.querySelector("#courseName");
@@ -37,5 +53,15 @@ function renderSections(sections) {
     );
     document.querySelector("#sections").innerHTML = html.join("");
 }
+
+document.querySelector("#enrollStudent").addEventListener("click", function () {
+    const sectionNum = document.querySelector("#sectionNumber").value;
+    aCourse.enrollStudent(sectionNum);
+});
+document.querySelector("#dropStudent").addEventListener("click", function () {
+    const sectionNum = document.querySelector("#sectionNumber").value;
+    aCourse.dropStudent(sectionNum);
+});
+
 setCourseInfo(aCourse);
 renderSections(aCourse.sections);
