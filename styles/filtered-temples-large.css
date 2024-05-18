@@ -1,0 +1,19 @@
+@media screen and (min-width: 768px) {
+    #temple-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .menu-links {
+        display: flex; 
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #temple-cards-container {
+        grid-template-columns: repeat(3, 1fr);
+    }    
+}
