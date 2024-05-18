@@ -137,28 +137,29 @@ function displayTemples(templeList) {
     templeList.forEach(temple => {
         //create card
         const templeCard = document.createElement("figure");
+        const templeHeading = document.createElement("h3");
+        const templeLocation = document.createElement("p");
+        const templeDedicated = document.createElement("p");
+        const templeSize = document.createElement("p");
+        const templeImg = document.createElement("img");
+
         templeCard.className = "temple-card";
 
         //create title on card
-        const templeHeading = document.createElement("h3");
         templeHeading.textContent = temple.templeName;
         templeHeading.className = "card-heading";
         templeCard.appendChild(templeHeading);
 
         //add details to card
-        const templeLocation = document.createElement("p");
         templeLocation.innerHTML = `<span class="label">Location: </span>${temple.location}`;
         templeCard.appendChild(templeLocation);
 
-        const templeDedicated = document.createElement("p");
         templeDedicated.innerHTML = `<span class="label">Dedicated: </span>${temple.dedicated}`;
         templeCard.appendChild(templeDedicated);
 
-        const templeSize = document.createElement("p");
         templeSize.innerHTML = `<span class="label">Size: </span>${temple.area} sq ft`;
         templeCard.appendChild(templeSize);
 
-        const templeImg = document.createElement("img");
         templeImg.setAttribute("src", temple.imageUrl);
         templeImg.setAttribute("alt", `Picture of ${temple.templeName} Temple`);
         templeImg.setAttribute("loading", "lazy");
