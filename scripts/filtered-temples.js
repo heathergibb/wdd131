@@ -162,6 +162,8 @@ function displayTemples(templeList) {
         templeImg.setAttribute("src", temple.imageUrl);
         templeImg.setAttribute("alt", `Picture of ${temple.templeName} Temple`);
         templeImg.setAttribute("loading", "lazy");
+        templeImg.width = 400;
+        templeImg.height = 250;
         templeCard.appendChild(templeImg);
 
         templeCardContainer.appendChild(templeCard);
