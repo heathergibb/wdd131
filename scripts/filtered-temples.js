@@ -94,39 +94,43 @@ navButton.addEventListener("click", () => {
 
 window.addEventListener("resize", function () {
     if (this.window.innerWidth >= 768) {
-        navMenu.classList.remove("show");
-        navButton.classList.remove("show");
+        removeShowClass();
     }
 })
+
+function removeShowClass() {
+    navMenu.classList.remove("show");
+    navButton.classList.remove("show");
+}
 
 homeLink.addEventListener("click", () => {
     displayTemples(temples);
     title.textContent = "Home";
-    navMenu.classList.remove("show");
+    removeShowClass();
 });
 
 oldLink.addEventListener("click", () => {
     displayTemples(temples.filter(temple => (parseInt(temple.dedicated) < 1900)));
     title.textContent = "Old";  
-    navMenu.classList.remove("show");  
+    removeShowClass();  
 });
 
 newLink.addEventListener("click", () => {
     displayTemples(temples.filter(temple => (parseInt(temple.dedicated) > 2000)));
     title.textContent = "New";
-    navMenu.classList.remove("show");    
+    removeShowClass();    
 });
 
 largeLink.addEventListener("click", () => {
     displayTemples(temples.filter(temple => (temple.area > 90000)));
     title.textContent = "Large";   
-    navMenu.classList.remove("show");  
+    removeShowClass();  
 });
 
 smallLink.addEventListener("click", () => {
     displayTemples(temples.filter(temple => (temple.area < 10000)));
     title.textContent = "Small";  
-    navMenu.classList.remove("show");  
+    removeShowClass(); 
 });
 
 displayTemples(temples);
