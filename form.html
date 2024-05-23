@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Review Form</title>
+    <meta name="description" content="Customer Review Form for WDD131 Assignment">
+    <meta name="author" content="Heather Gibb">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="review-form">
+            <label>Product Name
+                <select id="product-name name="products" required>
+                    <!-- <option value="">Choose a Product ...</option>
+                    <option value="fc-1888">Flux Capacitor</option>
+                    <option value="fc-2050">Power Laces</option>
+                    <option value="fs-1987">Time Circuits</option>
+                    <option value="ac-2000">Low Voltage Reactor</option>
+                    <option value="jj-1969">Warp Equalizer</option> -->
+                </select>
+        </label>
+        </form>
+    </main>
+    <footer>
+        <nav class="footer-details">
+            <p>&copy;<span id="currentYear"></span> | Heather Gibb | Lethbridge, AB, Canada</p>
+            <p id="lastModified"></p>
+        </nav>  
+    </footer>
+</body>
+</html>
