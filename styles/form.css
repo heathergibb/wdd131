@@ -18,7 +18,10 @@ header, footer {
     margin-bottom: 20px;
 }
 
-.review-form {
+.thanks {
+    text-align: center;
+}
+.review-form, .thanks {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
@@ -49,13 +52,13 @@ input, select, textarea, text {
     max-width: 600px;
 }
 
-.features-group {
+#features-group {
     display: flex;
     flex-direction: column;
     padding-top: 10px;
 }
 
-.features-group label {
+#features-group label {
     display: flex;
     font-weight: normal;
 }
