@@ -1,0 +1,114 @@
+:root {
+    --light-contrast: #b3c5b9;
+    --contrast: #858384;
+    --light-color: #DCE0D9;
+    --dark-font: black;
+    --accents: darkred;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    box-sizing: border-box;
+    margin: 20px;
+    background-color: var(--light-color);
+}
+
+header, footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.review-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--light-contrast);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label, legend {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#product-name, #install-date, #customer-name {
+    height: 44px;
+}
+input, select, textarea, text {
+    font-family: Montserrat, sans-serif;
+    padding: .5rem;
+    font-size: 1rem;
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.features-group {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.features-group label {
+    display: flex;
+    font-weight: normal;
+}
+input[type='checkbox'] {
+    width: auto;
+    margin-right: 10px;
+}
+
+#star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+#star-rating input {
+    display: none;
+}
+
+#star-rating > label {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    color: var(--accents);
+    font-size: 2rem;
+}
+#star-rating > label::before {
+    content: '\2606';
+}
+
+#star-rating > label:hover {
+    color: var(--dark-font);
+}
+#star-rating input:checked ~ label::before {
+    content: '\2605';
+}
+
+#written-review {
+    height: 150px;
+    resize: none;
+}
+
+.optional {
+    color: var(--accents);
+    font-size: smaller;
+}
+
+.subtext {
+    font-style: italic;
+}
+
+#post-review {
+    font-weight: bold;
+    font-size: larger;
+    height: 44px;
+}
