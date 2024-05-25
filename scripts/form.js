@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     const currentPage = document.location.pathname;
 
-    if (currentPage == "/form.html") {
+    if (currentPage.endsWith("form.html")) {
         LoadProducts();
     }
-    else if (currentPage == "/review.html") {
+    else if (currentPage.endsWith("review.html")) {
         incrementReviewCounter();
     }
 })
