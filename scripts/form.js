@@ -45,8 +45,8 @@ function LoadProducts() {
     products.forEach(product => {
         const option = document.createElement("option")
 
-        option.value = product.name;
-        option.textContent = `${product.name} (${product.id})`;
+        option.value = product.id;
+        option.textContent = product.name;
 
         productSelect.appendChild(option);
     });
