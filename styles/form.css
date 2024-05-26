@@ -42,18 +42,6 @@ input[type='checkbox'] {
     margin-right: 10px;
 }
 
-/* #product-name, #install-date, #customer-name, #post-review {
-    height: 44px;
-    font-family: Montserrat, sans-serif;
-    font-size: 1rem;
-    margin: 10px 0 15px;
-    width: 100%;
-    max-width: 600px;
-    padding: 10px;
-    box-sizing: border-box;
-    
-} */
-
 #product-name, 
 #star-rating, 
 #install-date, 
