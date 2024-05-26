@@ -113,12 +113,9 @@ input[type='checkbox'] {
     border: none;
 }
 
-.optional {
+.optional, .subtext {
     color: var(--accents);
     font-size: smaller;
-}
-
-.subtext {
     font-style: italic;
 }
 
