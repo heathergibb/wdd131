@@ -108,8 +108,9 @@ input[type='checkbox'] {
 }
 
 #written-review {
-    /* height: 150px; */
+    height: 150px;
     resize: none;
+    border: none;
 }
 
 .optional {
