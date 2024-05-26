@@ -35,7 +35,6 @@ label, legend {
 }
 
 .hidden {
-    opacity:0;
     overflow: hidden;
 }
 
