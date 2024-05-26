@@ -45,7 +45,7 @@ input[type='checkbox'] {
 #product-name, 
 #star-rating, 
 #install-date, 
-#features-group, 
+#features-fieldset, 
 #written-review, 
 #customer-name,
 #post-review {
@@ -59,18 +59,18 @@ input[type='checkbox'] {
     box-sizing: border-box;
 }
 
-#features-group {
+#features-fieldset {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
 }
 
-#features-group label {
+#features-fieldset label {
     display: flex;
     font-weight: normal;
 }
 
-#star-rating-fieldset {
+#star-rating-fieldset, #features-fieldset {
     border: none;
     padding: 0;
 }
@@ -81,11 +81,9 @@ input[type='checkbox'] {
     flex-direction: row-reverse;
     justify-content: left;
     margin: 10px 0;
-    /* box-sizing: border-box; */
 }
 
 #star-rating input {
-    /* display: none; */
     opacity: 0; /*hide the radio buttons but leave them active so they can be focusable*/
 }
 
@@ -110,7 +108,7 @@ input[type='checkbox'] {
 }
 
 #written-review {
-    height: 150px;
+    /* height: 150px; */
     resize: none;
 }
 
