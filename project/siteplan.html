@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Plan</title>
-    <meta type="description" content="Site Plan for Final WDD131 Project">
-    <meta type="author" content="Heather Gibb">
+    <meta name="description" content="Site Plan for WDD131 Final Project">
+    <meta name="author" content="Heather Gibb">
     <link rel="stylesheet" href="styles/siteplan.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
-
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <body>
-    <header>Site Plan for Final WDD131 Project</header>
+    <header>Site Plan for WDD131 Final Project</header>
     <main>
         <div class="section">
             <p class="label">Site Name: </p>
             <p class="description">Alberta Rocky Mountains Hikes</p>
+            <br><p>I chose this name because the main purpose of the page is to view some info about hikes in that area.</p>
         </div>
         <div class="section">
             <p class="label">Site Purpose: </p>
@@ -26,10 +25,10 @@
         <div class="section">
             <p class="label">Scenarios: </p>
             <ul class="description">
-                <li>Which hikes are easy, moderate, or hard?</li>
+                <li>What are some good hikes in Jasper, Banff, and Waterton?</li>
+                <li>Find a hike based on different filter options.</li>
                 <li>What are some things to do in the nearest townsite?</li>
-                <li>List the order of hikes from longest to shortest distance.</li>
-                <li>What type of hikes are they; loop, out-and-back, point-to-point?</li>
+                <li>Submit a suggestion for a hike to add to the collection.</li>
             </ul>
         </div>
         <div class="section">
@@ -37,31 +36,41 @@
             <ul class="description">
                 <li>Page Background/Header Text: rgb(220, 224, 217)</li>
                 <li>Card Background: rgb(179, 197, 185)</li>
-                <li>Header Color: rgb(42, 100, 42)</li>
+                <li>Header/Footer Color: rgb(42, 100, 42)</li>
                 <li>Card Text: black</li>
-                <li>Footer Background: rgb(133, 131, 132)</li>
-
             </ul>
         </div>
         <div class="section">
             <p class="label">Typography: </p>
-            <p class="description">Montserrat, Arial, sans-serif</p>
+            <ul class="description">
+                <li>Headings: DM Serif Display", "Times New Roman", serif</li>
+                <li>Page Text: Montserrat, Arial, sans-serif</li>
+            </ul>
         </div>
         <div class="section">
             <p class="label">Wireframes: </p>
         </div>
-        <div class="wireframes">
-            <p class="img-label">Home Page</p>
-            <img src="images/sm-home-page.webp" width:600 height:auto>
-        </div>
-        <div class="wireframes">
-            <p class="img-label">Hikes</p>
-            <img src="images/sm-hikes.webp" width:600 height:auto>
-        </div>
-        <div class="wireframes">
-            <p class="img-label">Suggest a Hike</p>
-            <img src="images/sm-suggest.webp" width:600 height:auto>
-        </div>
+
+        <p class="img-label">Home Page: Desktop</p>
+        <picture class="wireframes">
+            <source srcset="images/sm-home-page.webp">
+            <img src="images/sm-home-page.webp" alt="home page wireframe" width="600">
+        </picture>
+        <p class="img-label">Home Page: Mobile</p>
+        <picture class="wireframes">
+            <source srcset="images/sm-home-mobile.webp">
+            <img class="mobile-img" src="images/sm-home-mobile.webp" alt="home page wireframe" width="250">
+        </picture>
+        <p class="img-label">Hikes</p>
+        <picture class="wireframes">
+            <source srcset="images/sm-hikes.webp">
+            <img src="images/sm-hikes.webp" loading="lazy" alt="Hikes wireframe" width="600">
+        </picture>
+        <p class="img-label">Suggest a Hike</p>
+        <picture class="wireframes">
+            <source srcset="images/sm-suggest.webp">
+            <img src="images/sm-suggest.webp" loading="lazy" alt="suggest a hike wireframe" width="600">
+        </picture>
     </main>
     <footer>
         <p>Heather Gibb</p><br>

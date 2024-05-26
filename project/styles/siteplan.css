@@ -10,9 +10,11 @@ body {
     background: var(--light-color);
     font-family: Montserrat, Arial, sans-serif;
     display: inline-block;
+    margin: 0 20px;
 }
 
 header {
+    font-family: "DM Serif Display", "Times New Roman", serif;
     text-align: center;
     font-size: 2rem;
     background: var(--dark-color);
@@ -41,17 +43,21 @@ p {
 img {
     border: 1px solid var(--dark-color);
     justify-content: center;
-    width: 700px;
+    width: 600px;
     margin: 0 auto;
+}
+
+.mobile-img {
+    width: 250px;
 }
 
 .img-label {
     display: block;
-    /* text-align: center; */
+    text-align: center;
     font-weight: bold;
 }
 footer {
-    background-color: var(--footer);
+    background-color: var(--dark-color);
     color: var(--light-color);
     display: block;
     text-align: center;
