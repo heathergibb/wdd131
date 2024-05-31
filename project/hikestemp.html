@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocky Mountain Hikes | Alberta</title>
+    <meta name="author" content="Heather Gibb">
+    <meta name="description" content="Discover some amazing hikes and learn about the town sites Jasper, Banff, and Waterton in Alberta's Rocky Mountain Parks.">
+    <link rel="stylesheet" href="styles/hikes.css">
+    <link rel="stylesheet" href="styles/hikes-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/hikes.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Hikes</h1>
+        <div id="menu"></div>
+        <nav class="menu-links">
+            <a href="#" id="home">Home</a>
+            <a href="#" id="old">Suggest a Hike</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="sidebar">
+                <form class="filter-form">
+                    <fieldset id="filter-parks">
+                        <legend>Park</legend>
+                        <label class="check-label"><input type="checkbox" id="jasper" name="jasper" value="yes">Jasper</label>
+                        <label class="check-label"><input type="checkbox" id="bandd" name="banff" value="yes">Banff</label>
+                        <label class="check-label"><input type="checkbox" id="waterton" name="waterton" value="yes">Waterton</label>
+                    </fieldset>
+                    <fieldset id="filter-difficulty">
+                        <legend>Difficulty</legend>
+                        <label class="check-label"><input type="checkbox" id="easy" name="easy" value="yes">Easy</label>
+                        <label class="check-label"><input type="checkbox" id="moderate" name="moderate" value="yes">Moderate</label>
+                        <label class="check-label"><input type="checkbox" id="hard" name="hard" value="yes">Hard</label>
+                        <label class="check-label"><input type="checkbox" id="very-hard" name="very-hard" value="yes">Very Hard</label>
+                    </fieldset>
+                    <fieldset id="filter-distance">
+                        <legend>Distance (km)</legend>
+                        <div class="input-group">
+                            <label for="min-distance" class=input-label>Min: <input type="number" class="inputs" id="min-distance" name="min-distance"></label>
+                            <label for="max-distance" class=input-label>Max: <input type="number" class="inputs" id="max-distance" name="max-distance"></label>
+                        </div>
+                        </fieldset>
+                    <fieldset id="filter-elevation">
+                        <legend>Elevation Gain (m)</legend>
+                        <div class="input-group">
+                            <label for="min-elevation" class=input-label>Min: <input type="number" class="inputs" id="min-elevation" name="min-elevation"></label>
+                            <label for="max-elevation" class=input-label>Max: <input type="number" class="inputs" id="max-elevation" name="max-elevation"></label>
+                        </div>
+                        </fieldset>
+                    <fieldset id="filter-type">
+                        <legend>Trail Type</legend>
+                        <label class="check-label"><input type="checkbox" id="loop" name="loop" value="yes">Loop</label>
+                        <label class="check-label"><input type="checkbox" id="out-and-back" name="aut-and-back" value="yes">Out-and-back</label>
+                        <label class="check-label"><input type="checkbox" id="point-to-point" name="point-to-point" value="yes">Point-to-point</label>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="content">
+                <h2 id="title">Home</h2>
+                <div id="hike-cards-container">
+                        
+                </div>
+                <p>content</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <nav class="footer-details">
+            <p>&copy;<span id="currentYear"></span> | Heather Gibb | Lethbridge, AB, Canada</p>
+            <p id="lastModified"></p>
+        </nav>  
+    </footer>
+    
+</body>
+</html>

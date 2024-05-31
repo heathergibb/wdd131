@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocky Mountain Hikes | Alberta</title>
+    <meta name="author" content="Heather Gibb">
+    <meta name="description" content="Discover some amazing hikes and learn about the town sites Jasper, Banff, and Waterton in Alberta's Rocky Mountain Parks.">
+    <link rel="stylesheet" href="styles/hikes.css">
+    <link rel="stylesheet" href="styles/hikes-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/hikes.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- <img class="header-img" src="images/Patricia Lake.jpg" alt="Rocky Mountain peaks" height="100"> -->
+        <h1>Hikes</h1>
+        <div id="menu"></div>
+        <nav class="menu-links">
+            <a href="index.html">Home</a>
+            <a href="suggest.html">Suggest</a>
+            <a href="#resources">Resources</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="sidebar">
+                <!-- <form class="filter-form"> -->
+                    <fieldset id="filter-parks">
+                        <legend>Park</legend>
+                        <label for="jasper" class="check-label"><input type="checkbox" onclick="saveChange(this)" id="jasper">Jasper</label>
+                        <label for="banff" class="check-label"><input type="checkbox" onclick="saveChange(this)" id="banff">Banff</label>
+                        <label for="waterton" class="check-label"><input type="checkbox" onclick="saveChange(this)" id="waterton">Waterton</label>
+                        <!-- <input type="submit" value="Select All" onclick="selectAll()" id="all"> -->
+                    </fieldset>
+                    <fieldset id="sort-by">
+                        <legend>Sort By</legend>
+                        <input type="submit" id="difficulty" class="sort-button" value="Difficulty">
+                        <input type="submit" id="distance" class="sort-button" value="Distance">
+                        <input type="submit" id="elevation" class="sort-button" value="Elevation Gain">
+                    </fieldset>
+                    <!-- <fieldset id="filter-difficulty">
+                        <legend>Difficulty</legend>
+                        <label class="check-label"><input type="checkbox" onclick="saveChange(this)" id="easy">Easy</label>
+                        <label class="check-label"><input type="checkbox" onclick="saveChange(this)" id="moderate">Moderate</label>
+                        <label class="check-label"><input type="checkbox" onclick="saveChange(this)" id="hard">Hard</label>
+                        <label class="check-label"><input type="checkbox" onclick="saveChange(this)" id="very-hard">Very Hard</label>
+                    </fieldset>
+                    <fieldset id="filter-distance">
+                        <legend>Distance (km)</legend>
+                        <div class="input-group">
+                            <label for="min-distance" class=input-label>Min: <input type="number" class="inputs" id="min-distance"</label>
+                            <label for="max-distance" class=input-label>Max: <input type="number" class="inputs" id="max-distance"></label>
+                        </div>
+                        </fieldset>
+                    <fieldset id="filter-elevation">
+                        <legend>Elevation Gain (m)</legend>
+                        <div class="input-group">
+                            <label for="min-elevation" class=input-label>Min: <input type="number" class="inputs" id="min-elevation"></label>
+                            <label for="max-elevation" class=input-label>Max: <input type="number" class="inputs" id="max-elevation"></label>
+                        </div>
+                        </fieldset>
+                    <fieldset id="filter-type">
+                        <legend>Trail Type</legend>
+                        <label class="check-label"><input type="checkbox" onclick="saveChange(this)" id="loop">Loop</label>
+                        <label class="check-label"><input type="checkbox" onclick="saveChange(this)" id="out-and-back">Out-and-back</label>
+                        <label class="check-label"><input type="checkbox" onclick="saveChange(this)" id="point-to-point">Point-to-point</label>
+                    </fieldset> -->
+                <!-- </form> -->
+            </div>
+            <div class="content">
+                <div id="hike-cards-container">
+
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <nav id="resources">
+            <P>Other Resources</P>
+            <a href="https://parks.canada.ca/pn-np/ab/jasper/visit" target="_blank">Jasper</a>
+            <a href="https://parks.canada.ca/pn-np/ab/banff/visit" target="_blank">Banff</a>
+            <a href="https://parks.canada.ca/pn-np/ab/waterton/visit" target="_blank">Waterton</a>
+            <a href="https://www.alltrails.com" target="_blank">AllTrails</a>
+            <a href="https://www.pexels.com" target="_blank">Pexels - source of some images</a>
+        </nav>
+        <nav class="footer-details">
+            <p>&copy;<span id="currentYear"></span> | Heather Gibb | Magrath, AB, Canada</p>
+            <p id="lastModified"></p>
+        </nav>  
+    </footer>
+</body>
+</html>
