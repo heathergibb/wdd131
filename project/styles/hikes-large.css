@@ -7,6 +7,10 @@
         display: flex; 
     }
     
+    .menu-links a {
+        font-size: 1.1rem;
+    }
+
     #homepage-content {
         max-width: 1000px;
         margin: 0 auto;
@@ -74,7 +78,7 @@
     .button:hover {
         transform: scale(1.1);
     }
-    
+
     .hike-card {
         display: grid;
         grid-template-columns: auto 1fr;
