@@ -269,6 +269,7 @@ footer {
     font-weight: bold;
     font-size: 1rem;
     padding: 0 10px;
+    color: var(--light-color);
 }
 
 #resources a:hover, #resources a:visited:hover {
