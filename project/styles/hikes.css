@@ -134,6 +134,9 @@ legend {
     margin-bottom: 15px;
 }
 
+#sort-by {
+    flex-direction: column;
+}
 .check-label {
     margin: 5px;
 }
@@ -144,6 +147,7 @@ input[type="checkbox"] {
 
 .button {
     font-family: Montserrat, Arial, sans-serif;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
     border: 1px solid var(--dark-color);
@@ -156,11 +160,8 @@ input[type="checkbox"] {
 }
 
 .button:active{
-background-color: var(--dark-color);
-color:white}
-
-.button:hover {
-    transform: scale(1.1);
+    background-color: var(--dark-color);
+    color:white
 }
 
 .hike-card {
@@ -234,7 +235,6 @@ form {
     background-color: var(--light-color);
     color: var(--dark-font);
     width: 100%;
-    font-size: 1rem;
     margin: 0;
 }
 
