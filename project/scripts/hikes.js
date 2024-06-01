@@ -6,6 +6,7 @@ const hikes = [
         elevation: 855, //meters
         difficulty: "Hard",
         type: "Out and Back",
+        description: "The Crypt Lake hike is one of the most iconic and challenging hikes in the area, offering breathtaking scenery and unique features along the trail.",
         imageLoc: "images/crypt-lake.webp"
     },
     {
@@ -15,6 +16,7 @@ const hikes = [
         elevation: 589, //meters
         difficulty: "Moderate",
         type: "Out and Back",
+        description: "Bertha Lake hike offers a moderate trek through lush forests to reach the picturesque Bertha Falls, culminating in the tranquil shores of Bertha Lake, surrounded by majestic peaks and vibrant alpine flora.",
         imageLoc: "images/bertha-falls.webp"
     
     },
@@ -25,6 +27,7 @@ const hikes = [
         elevation: 217, //meters
         difficulty: "Moderate",
         type: "Out and Back",
+        description: "Bear's Hump hike is a short but steep ascent offering panoramic views of Waterton Village, Upper Waterton Lake, and the surrounding mountain ranges, providing an excellent vantage point for sunset or sunrise photography.",
         imageLoc: "images/bears-hump.webp"
     },
     {
@@ -34,6 +37,7 @@ const hikes = [
         elevation: 788, //meters
         difficulty: "Hard",
         type: "Point to Point",
+        description: "This hike is a challenging yet rewarding trek that traverses diverse landscapes, including lush forests, alpine meadows, and rocky terrain, offering stunning views of Cameron Falls and culminating at the serene Cameron Lake, where hikers can enjoy the tranquility of the pristine alpine setting.",
         imageLoc: "images/cameron-falls.webp"
     },
     {
@@ -43,6 +47,7 @@ const hikes = [
         elevation: 274, //meters
         difficulty: "Easy",
         type: "Out and Back",
+        description: "Johnston Canyon to Upper Falls is a cherished favorite of my family in Banff National Park, celebrated for its scenic canyon vistas, enchanting waterfalls, and easy-to-navigate trails perfect for hikers of all ages.",
         imageLoc: "images/johnston-canyon.webp"
     },
     {
@@ -52,6 +57,7 @@ const hikes = [
         elevation: 934, //meters
         difficulty: "Hard",
         type: "Out and Back",
+        description: "This hike offers adventurers a challenging but rewarding trek through dense forests and rugged terrain, culminating in the stunning alpine beauty of Rockbound Lake, surrounded by towering peaks and serene wilderness.",
         imageLoc: "images/rockbound.webp"
     },
     {
@@ -61,6 +67,7 @@ const hikes = [
         elevation: 441, //meters
         difficulty: "Moderate",
         type: "Out and Back",
+        description: "The Boom Lake hike provides a peaceful journey through dense forests, leading to the tranquil shores of Boom Lake, where hikers can enjoy serene mountain reflections and the pristine beauty of the Canadian Rockies.",
         imageLoc: "images/boom-lake.webp"
     },
     {
@@ -70,6 +77,7 @@ const hikes = [
         elevation: 1560, //meters
         difficulty: "Very Hard",
         type: "Point to Point",
+        description: "The Skyline hike offers a challenging yet awe-inspiring journey through alpine meadows, rugged ridges, and breathtaking vistas.",
         imageLoc: "images/skyline.webp"
     },
     {
@@ -79,6 +87,7 @@ const hikes = [
         elevation: 555, //meters
         difficulty: "Hard",
         type: "Out and Back",
+        description: "This hike takes adventurers through alpine meadows adorned with colorful wildflowers, offering stunning views of glaciers, towering peaks, and the iconic Angel Glacier, making it a must-do experience for nature lovers and photographers alike.",
         imageLoc: "images/edith-cavell-meadows.webp"
     },
     {
@@ -88,6 +97,7 @@ const hikes = [
         elevation: 161, //meters
         difficulty: "Easy",
         type: "Loop",
+        description: "This hike offers a leisurely stroll through lush forests and open meadows, leading to a series of five stunning turquoise lakes surrounded by picturesque mountain scenery, providing a perfect setting for a serene nature retreat or a family-friendly outing.",
         imageLoc: "images/valley-of-the-5-lakes.webp"
     },
     {
@@ -97,7 +107,18 @@ const hikes = [
         elevation: 656, //meters
         difficulty: "Moderate",
         type: "Out and Back",
+        description: "The Sulphur Skyline offers a challenging ascent to panoramic views from the summit, where hikers are rewarded with breathtaking vistas of the surrounding mountain ranges.",
         imageLoc: "images/sulpur-skyline.webp"
+    },
+    {
+        hikeName: "Consolation Lake",
+        park: "Banff",
+        distance: 3.6, //km
+        elevation: 85, //meters
+        difficulty: "Easy",
+        type: "Out and Back",
+        description: "The trailhead for Consolation Lake is located at the Moraine Lake parking lot. The trail winds through a picturesque forest. Consolation Lake offers excellent opportunities for photography, with its crystal-clear waters reflecting the surrounding mountain scenery.",
+        imageLoc: "images/consolation-lake.webp"
     }
 ];
 
@@ -114,7 +135,6 @@ sortDistance.addEventListener("click",() => sortByDistance());
 sortElevation.addEventListener("click",() => sortByElevation());
 
 document.addEventListener('DOMContentLoaded', (event) => {
-
     setCheckbox(chkJasper);
     setCheckbox(chkBanff);
     setCheckbox(chkWaterton);
@@ -139,6 +159,7 @@ function displayHikes(hikeList) {
         const hikeElevation = document.createElement("p");
         const hikeDifficulty = document.createElement("p");
         const hikeType = document.createElement("p");
+        const hikeDesc = document.createElement("p");
         const hikeImg = document.createElement("img");
 
         hikeCard.className = "hike-card";
@@ -176,6 +197,10 @@ function displayHikes(hikeList) {
 
         hikeCard.appendChild(hikeDetails);
 
+        hikeDesc.innerHTML = hike.description;
+        hikeDesc.className = "hike-desc";
+        hikeCard.appendChild(hikeDesc);
+        
         hikeCardContainer.appendChild(hikeCard);
     });
 }
@@ -257,15 +282,3 @@ function sortByElevation() {
     sortedArray = sortedArray.sort((a, b) => a.elevation - b.elevation);
     displayHikes(sortedArray);
 }
-
-
-// FOOTER SCRIPT
-
-const today = new Date();
-const year = document.querySelector("#currentYear");
-year.innerHTML = today.getFullYear();
-
-let lastModif = new Date(document.lastModified).toLocaleString('en-us');
-const lastModified = document.querySelector("#lastModified");
-
-lastModified.innerHTML = `Last Modified: <span>${lastModif}</span>`;

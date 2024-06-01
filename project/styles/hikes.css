@@ -12,8 +12,8 @@ body {
 }
 
 header {
-    font-family: "DM Serif Display", "Times New Roman", serif;
-    font-size: 1.5rem;
+    font-family: Lora, "Times New Roman", serif;
+    font-size: 1.25rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,15 +27,17 @@ header {
     display: block;
     font-size: 2rem;
     text-decoration: none;
-    color: black;
+    color: var(--dark-font);
 }
 
 #menu::before {
     content: "☰";
+    color: var(--light-color);
 }
 
 #menu.show::before {
     content: "X";
+    color: var(--light-color);
 }
 
 .menu-links {
@@ -45,32 +47,29 @@ header {
 .menu-links.show {
     display: flex;
     flex-direction: column;
-    top: 6.5rem;
-    right: 0.5rem;
-    left: 0.5rem;
-    width: auto;
-    align-items: center;
+    top: 5rem;
+    right: 20px;
+    left: 20px;
     position:absolute;
-    text-align: center;
-    background-color: var(--light-color);
-    padding: 0 2rem;
+    background-color: var(--dark-color);
 }
 
 .menu-links a {
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: bolder;
     text-decoration: none;
     color: var(--light-color);
     font-size: 1.3rem;
-    padding: 0 1rem;
-    height: 6rem;
+    height: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    padding: 10px;
 }
 
 .menu-links a:hover {
-    background: var(--dark-color);
-    color: var(--light-color);
+    color: var(--dark-color);
+    background: var(--light-color);
 }
 
 main {
@@ -78,87 +77,96 @@ main {
     max-width: 1400px;
 }
 
+.place-title, .card-title {
+    font-variant: small-caps;
+}
+
+/* HOME PAGE FORMATTING */
+.subheading {
+    text-align: center;
+}
+.homepage-text {
+    text-align: center;
+    font-style: italic;
+
+}
+
+.place-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: var(--light-contrast);
+}
+
+.place-title, .place-details {
+    padding: 10px;
+    margin: 0;
+}
+
+.place-card img {
+    width: 100%;
+}
+
+figcaption {
+    font-size: small;
+    font-style: italic;
+}
+
+ /* HIKES PAGE FORMATTING */
 
 .container {
-    display: flex;
-    min-height: 100%;
+    display: block;
+    text-align: center;
 }
 
-.sidebar {
-    height: 100%;
-    width: 250px;
-    /* box-sizing: border-box; */
+legend {
+    font-weight: bold;
 }
 
-#filter-parks, 
-#filter-difficulty, 
-#filter-type, 
-#filter-distance, 
-#filter-elevation {
+#filter-parks, #sort-by {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin-top: 10px;
     margin-bottom: 15px;
 }
 
-#filter-parks, #filter-difficulty, #filter-type {
-    flex-direction: column;
+.check-label {
+    margin: 5px;
 }
 
-#filter-distance, #filter-elevation {
-    flex-direction: row;
-}
-
-.content {
-    flex-grow: 1;
-    flex-wrap: wrap;
-    flex-direction: column;
-    display: flex;
-    /* margin-left: auto; */
-}
-
-.input-group {
-    display: flex;
-    justify-content: space-between;
-}
-
-.input-label {
-    display: flex;
-    align-items: center;
+input[type="checkbox"] {
     margin-right: 10px;
 }
 
-.check-label {
-    margin: 5px 15px;
+.sort-button {
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-style: groove;
+    border-radius: 3px;
+    margin: 5px;
+    color: var(--dark-font);
+    background-color: var(--light-contrast);
+    height: 48px;
+    transition: all 0.4s;
 }
 
-.inputs {
-    font-family: 'Montserrat', sans-serif;
-    margin-left: 10px;
-    font-size: 1rem;
-    padding: 10px;
-    width: 44px;
+.sort-button:active{
+background-color: var(--dark-color);
+color:white}
+
+.sort-button:hover {
+    transform: scale(1.1);
 }
-
-/*I copied the following code from W3 schools to remove the 
-scrollbars on the number inputs*/
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-/* input[type=number] {
-  -moz-appearance: textfield;
-} */
 
 .hike-card {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-items: flex-start;
+    align-items: center;
     margin-bottom: 20px;
     padding: 15px;
     background: var(--light-contrast);
@@ -174,18 +182,50 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-footer {
-    font-family: "DM Serif Display", "Times New Roman", serif;
+.label {
+    font-weight: bold;
+}
 
+.hike-desc {
+    padding-top: 10px;
+    font-style: italic;
+}
+
+footer {
+    font-family: Lora, "Times New Roman", serif;
     text-align: center;
     padding: 20px;
     background: var(--dark-color);
     color: var(--light-color);
 }
 
+#resources h3 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-variant: small-caps;
+}
+#resources a {
+    text-decoration: underline;
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0 10px;
+}
+
+#resources a:hover, #resources a:visited:hover {
+    background-color: var(--light-color);
+    color: black;
+}
+
+#resources a:visited {
+    text-decoration: none;
+    color: var(--light-color);
+}
+
 .footer-details {
     padding-top: 15px;
 }
+
 .footer-details p{
     font-size: .75rem;
     margin: 0;

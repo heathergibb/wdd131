@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocky Mountain Parks | Alberta</title>
+    <meta name="author" content="Heather Gibb">
+    <meta name="description" content="Discover some amazing hikes and learn about the town sites Jasper, Banff, and Waterton in Alberta's Rocky Mountain Parks.">
+    <link rel="stylesheet" href="styles/hikes.css">
+    <link rel="stylesheet" href="styles/hikes-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/header-footer.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Hiking in the Rockies</h1>
+        <div id="menu"></div>
+        <nav class="menu-links">
+            <a id="hikes-link" href="hikes.html">Hikes</a>
+            <a id="suggest-link" href="suggest.html">Suggest</a>
+            <a id="resources-link" href="#resources">Resources</a>
+        </nav>
+    </header>
+    <main>
+        <div id="homepage-content">
+            <h2 class="subheading">Explore Alberta's Rocky Mountain Parks through hiking adventures</h2>
+            <p class="homepage-text">The majestic Rocky Mountains of Alberta are home to three magnificent National Parks; Jasper, Banff, and Waterton. 
+            All three are full of opportunites to explore and enjoy the wonders of nature. My family
+            particularly likes camping and hiking in these parks, where we have had many oppourtunities to enjoy
+            to places where we can enjoy beautiful views and experiences.</p>
+        
+            <div class="place-card">
+                <h2 class="place-title" id="jasper-title">Jasper</h2> 
+                <figure id="jasper-pic">
+                    <img src="images/jasper.webp" alt="Athabasca Falls in Jasper National Park" loading="lazy" width=300 height=225>
+                    <figcaption>Athabasca Falls</figcaption>
+                </figure>
+                <p class="place-details" id="jasper-desc">Nestled in the heart of Jasper National Park, the townsite of Jasper offers a 
+                    charming escape surrounded by majestic mountain peaks. Originally established as a railway town in the early 1900s, 
+                    Jasper boasts a rich history and serves as a hub for outdoor adventure.
+                    <br><br>
+                    Visitors can explore the town's cozy cafes, boutique shops, and cultural attractions, all set against the backdrop 
+                    of pristine wilderness. From hiking and wildlife viewing to relaxing in natural hot springs, Jasper offers a wealth 
+                    of activities for nature lovers and outdoor enthusiasts alike.
+                    </p>
+            </div>
+            <div class="place-card">
+                <h2 class="place-title" id="banff-title">Banff</h2> 
+                <figure id="banff-pic">
+                    <img src="images/banff-ave.webp" alt="Banff Avenue" loading="lazy" width=300 height=225>
+                    <figcaption>Iconic Banff Ave</figcaption>
+                </figure>
+                <p class="place-details" id="banff-desc">The town of Banff is a charming mountain destination steeped in history and surrounded 
+                    by stunning natural beauty. Established in 1885 as Canada's first national park, Banff offers visitors a mix of outdoor 
+                    adventure, cultural experiences, and breathtaking scenery.
+                    <br><br>
+                    Explore the vibrant streets lined with boutiques, galleries, and eateries, or take in the views from the iconic Banff 
+                    Avenue. Outdoor enthusiasts can enjoy hiking, skiing, and wildlife spotting in the surrounding park, while relaxation 
+                    seekers can unwind in natural hot springs or indulge in spa treatments.
+                </p>
+            </div>
+            <div class="place-card">
+                <h2 class="place-title" id="waterton-title">Waterton</h2> 
+                <figure id="waterton-pic">
+                    <img src="images/waterton.webp" alt="Waterton viewed from Bear's Hump" loading="lazy" width=300 height=225>
+                <figcaption>Waterton Lake viewed from Bear's Hump</figcaption>
+                </figure>
+                <p class="place-details" id="waterton-desc">Located in the heart of Waterton Lakes National Park, the townsite of Waterton 
+                    is a picturesque mountain village renowned for its stunning scenery and abundant wildlife. Set against the backdrop of 
+                    rugged peaks and pristine lakes, Waterton offers visitors a tranquil escape in the Canadian Rockies.
+                    <br><br>
+                    Explore the charming streets lined with historic buildings, quaint shops, and inviting cafes, or embark on outdoor 
+                    adventures such as hiking, boating, and wildlife watching in the surrounding park. Don't miss iconic attractions like 
+                    the Prince of Wales Hotel and the scenic Red Rock Canyon.
+                </p>    
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <nav id="resources">
+            <h3>Other Resources</h3>
+            <a href="https://parks.canada.ca/pn-np/ab/jasper/visit" target="_blank">Jasper</a>
+            <a href="https://parks.canada.ca/pn-np/ab/banff/visit" target="_blank">Banff</a>
+            <a href="https://parks.canada.ca/pn-np/ab/waterton/visit" target="_blank">Waterton</a>
+            <a href="https://www.alltrails.com" target="_blank">AllTrails</a>
+        </nav>
+        <nav class="footer-details">
+            <p>&copy;<span id="currentYear"></span> | Heather Gibb | Magrath, AB, Canada</p>
+            <p id="lastModified"></p>
+        </nav>  
+    </footer>
+</body>
+</html>
