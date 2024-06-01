@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocky Mountain Parks | Alberta</title>
+    <meta name="author" content="Heather Gibb">
+    <meta name="description" content="Discover some amazing hikes and learn about the town sites Jasper, Banff, and Waterton in Alberta's Rocky Mountain Parks.">
+    <link rel="stylesheet" href="styles/hikes.css">
+    <link rel="stylesheet" href="styles/hikes-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/header-footer.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Suggest Hikes</h1>
+        <div id="menu"></div>
+        <nav class="menu-links">
+            <a id="home-link" href="index.html">Home</a>
+            <a id="hikes-link" href="hikes.html">Hikes</a>
+            <a id="resources-link" href="resources.html">Resources</a>
+        </nav>
+    </header>
+    <main>
+        <h2 class="subheading">If you'd like to suggest a park to add to the collection, please fill out this form:</h2>
+        
+        <form method="get" action="thanks.html" class="suggestion-form">
+            <label for="hike-name" class="form-label">Hike Name (required)</label>
+            <input type="text" id="hike-name" name="suggestion-hike-name" required>
+
+            <fieldset id="park-name">
+                <legend>Park (required)</legend>
+                <label for="jasper-radio"><input type="radio" id="jasper-radio" name="suggestion-park" required>Jasper</label>
+                <label for="banff-radio"><input type="radio" id="banff-radio" name="suggestion-park" required>Banff</label>
+                <label for="waterton-radio"><input type="radio" id="waterton-radio" name="suggestion-park" required>Waterton</label>
+            </fieldset>
+
+            <label for="suggestion-comment" class="form-label">Tell me about this hike (optional)</label>
+            <textarea id="suggestion-comment" name="suggestion-comment"></textarea>
+
+            <input id="submit-suggestion" class="button" type="submit" value="Send Suggestion">
+        </form>
+    </main>
+    
+    <footer>
+        <nav id="resources">
+            <h3>Other Resources</h3>
+            <a href="https://parks.canada.ca/pn-np/ab/jasper/visit" target="_blank">Jasper</a>
+            <a href="https://parks.canada.ca/pn-np/ab/banff/visit" target="_blank">Banff</a>
+            <a href="https://parks.canada.ca/pn-np/ab/waterton/visit" target="_blank">Waterton</a>
+            <a href="https://www.alltrails.com" target="_blank">AllTrails</a>
+        </nav>
+        <nav class="footer-details">
+            <p>&copy;<span id="currentYear"></span> | Heather Gibb | Magrath, AB, Canada</p>
+            <p id="lastModified"></p>
+        </nav>  
+    </footer>
+</body>
+</html>

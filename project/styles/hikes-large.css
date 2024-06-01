@@ -102,4 +102,10 @@
         grid-column: 1/3;
         grid-row: 3/4;
     }
+    
+    form {
+        width: 700px;
+        margin: 0 auto 30px auto;
+        box-sizing: border-box;
+    }
 }

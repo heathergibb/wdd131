@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rocky Mountain Hikes | Alberta</title>
+    <title>Rocky Mountain Parks | Alberta</title>
     <meta name="author" content="Heather Gibb">
     <meta name="description" content="Discover some amazing hikes and learn about the town sites Jasper, Banff, and Waterton in Alberta's Rocky Mountain Parks.">
     <link rel="stylesheet" href="styles/hikes.css">
@@ -11,40 +11,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="scripts/hikes.js" defer></script>
     <script src="scripts/header-footer.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Hikes</h1>
+        <h1>Suggest Hikes</h1>
         <div id="menu"></div>
         <nav class="menu-links">
-            <a id="home-link" href="index.html">Home</a>
+            <a id="hikes-link" href="hikes.html">Hikes</a>
             <a id="suggest-link" href="suggest.html">Suggest</a>
             <a id="resources-link" href="resources.html">Resources</a>
         </nav>
     </header>
     <main>
-        <div class="container">
-            <div class="sidebar">
-                <fieldset id="filter-parks">
-                    <legend>Park</legend>
-                    <label for="jasper" class="check-label"><input type="checkbox" onclick="saveChange(this)" id="jasper">Jasper</label>
-                    <label for="banff" class="check-label"><input type="checkbox" onclick="saveChange(this)" id="banff">Banff</label>
-                    <label for="waterton" class="check-label"><input type="checkbox" onclick="saveChange(this)" id="waterton">Waterton</label>
-                </fieldset>
-                <fieldset id="sort-by">
-                    <legend>Sort By</legend>
-                    <input type="submit" id="difficulty" class="button" value="Difficulty">
-                    <input type="submit" id="distance" class="button" value="Distance">
-                    <input type="submit" id="elevation" class="button" value="Elevation Gain">
-                </fieldset>
-            </div>
-            
-            <div id="hike-cards-container">
-
-            </div>
-        </div>
+        <h2 class="subheading">Thank you! You're suggestion has been recieved.</h2>
     </main>
     
     <footer>
