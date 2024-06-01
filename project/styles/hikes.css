@@ -235,6 +235,7 @@ form {
     color: var(--dark-font);
     width: 100%;
     font-size: 1rem;
+    margin: 0;
 }
 
 /* RESOURCES PAGE FORMATTING */
